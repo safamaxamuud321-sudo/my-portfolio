@@ -2,43 +2,64 @@
 <html>
 <head>
     <style>
-        body { font-family: sans-serif; margin: 0; background-color: #222; color: white; }
+        /* Midabka asalka oo gradient ah */
+        body { 
+            margin: 0; 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #2d1b1b, #8a584d); 
+            color: white; 
+            min-height: 100vh;
+        }
         
-        /* Nav Bar */
-        nav { display: flex; justify-content: space-around; padding: 20px; background: #333; }
-        nav a { color: white; text-decoration: none; font-weight: bold; }
+        /* Navigation Bar */
+        nav { display: flex; justify-content: space-between; padding: 30px 10%; align-items: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .contact-btn { border: 2px solid #ff7f50; padding: 8px 20px; border-radius: 25px; transition: 0.3s; }
+        .contact-btn:hover { background: #ff7f50; }
+
+        /* Qaybta Hero (Sawir iyo Qoraal) */
+        .hero-container { 
+            display: flex; 
+            align-items: center; 
+            justify-content: space-around; 
+            padding: 50px 10%; 
+            flex-wrap: wrap;
+        }
+        .text-section { max-width: 500px; }
+        .text-section h1 { font-size: 55px; margin-bottom: 20px; line-height: 1.2; }
+        .hire-btn { background: #ff7f50; padding: 15px 30px; border: none; border-radius: 5px; color: white; font-weight: bold; cursor: pointer; }
         
-        /* Hero Section */
-        .hero { text-align: center; padding: 100px 20px; }
-        .hero h1 { font-size: 50px; color: #ff7f50; }
-        .btn { background: #ff7f50; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 20px; }
-        
-        /* About Section */
-        .about { padding: 50px; background-color: #444; text-align: center; }
-        .about h2 { color: #ff7f50; }
+        /* Goobaabinta Sawirka */
+        .hero-image { 
+            width: 350px; 
+            height: 350px; 
+            border-radius: 50%; 
+            background-color: #555; 
+            border: 5px solid rgba(255,255,255,0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
-
 <body>
-    <!-- Nav Bar -->
     <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <div><strong>Michael</strong></div>
+        <div>
+            <a href="#">Home</a> <a href="#">About</a> <a href="#">Service</a>
+            <a href="#" class="contact-btn">Contact</a>
+        </div>
     </nav>
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <h1>Magacaaga Halkan</h1>
-        <p>User Interface Designer & Developer</p>
-        <a href="#" class="btn">Hire Me Now</a>
+    <div class="hero-container">
+        <div class="text-section">
+            <h1>Michael <br> User Interface <br> Designer</h1>
+            <p>Waxaan ahay horumariye websit-yada iyo naqshadeeye jecel hal-abuurka.</p>
+            <button class="hire-btn">Hire Me Now</button>
+        </div>
+        <div class="hero-image">
+            <p>Sawirkaaga Halkan</p>
+        </div>
     </div>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>Halkan ku qor wax yar oo kugu saabsan naftaada, xirfadahaaga, iyo waxa aad qabato.</p>
-    </section>
 </body>
 </html>

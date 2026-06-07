@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-<title>my porfolio</title>
-<style>
-  body{
-    font-family:Arial, sans-serif;
-    text-align:center;
-    padding:100px;
-    background-color:#f4f4f4;
-  }
-  h1{
-    color:#666;
-  }
-</style>
-  </head>
-  <body>
-    <h1>ku soo dhawaada website-kayga</h1>
-    <p>tani waa boggayga koowad ee aan ku sameeyay GitHub.</p>
-  </body>
+<head>
+    <style>
+        body { font-family: sans-serif; margin: 0; background-color: #222; color: white; }
+        
+        /* Nav Bar */
+        nav { display: flex; justify-content: space-around; padding: 20px; background: #333; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        
+        /* Hero Section */
+        .hero { text-align: center; padding: 100px 20px; }
+        .hero h1 { font-size: 50px; color: #ff7f50; }
+        .btn { background: #ff7f50; color: white; padding: 15px 30px; border-radius: 5px; text-decoration: none; display: inline-block; margin-top: 20px; }
+        
+        /* About Section */
+        .about { padding: 50px; background-color: #444; text-align: center; }
+        .about h2 { color: #ff7f50; }
+    </style>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Magacaaga Halkan</h1>
+        <p>User Interface Designer & Developer</p>
+        <a href="#" class="btn">Hire Me Now</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Halkan ku qor wax yar oo kugu saabsan naftaada, xirfadahaaga, iyo waxa aad qabato.</p>
+    </section>
+</body>
 </html>

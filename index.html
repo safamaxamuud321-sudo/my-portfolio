@@ -1,65 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        /* Midabka asalka oo gradient ah */
-        body { 
-            margin: 0; 
-            font-family: 'Arial', sans-serif; 
-            background: linear-gradient(135deg, #2d1b1b, #8a584d); 
-            color: white; 
-            min-height: 100vh;
-        }
-        
-        /* Navigation Bar */
-        nav { display: flex; justify-content: space-between; padding: 30px 10%; align-items: center; }
-        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-        .contact-btn { border: 2px solid #ff7f50; padding: 8px 20px; border-radius: 25px; transition: 0.3s; }
-        .contact-btn:hover { background: #ff7f50; }
-
-        /* Qaybta Hero (Sawir iyo Qoraal) */
-        .hero-container { 
-            display: flex; 
-            align-items: center; 
-            justify-content: space-around; 
-            padding: 50px 10%; 
-            flex-wrap: wrap;
-        }
-        .text-section { max-width: 500px; }
-        .text-section h1 { font-size: 55px; margin-bottom: 20px; line-height: 1.2; }
-        .hire-btn { background: #ff7f50; padding: 15px 30px; border: none; border-radius: 5px; color: white; font-weight: bold; cursor: pointer; }
-        
-        /* Goobaabinta Sawirka */
-        .hero-image { 
-            width: 350px; 
-            height: 350px; 
-            border-radius: 50%; 
-            background-color: #555; 
-            border: 5px solid rgba(255,255,255,0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div><strong>Michael</strong></div>
-        <div>
-            <a href="#">Home</a> <a href="#">About</a> <a href="#">Service</a>
-            <a href="#" class="contact-btn">Contact</a>
-        </div>
-    </nav>
 
-    <div class="hero-container">
-        <div class="text-section">
-            <h1> Hi, Im Safa Mohamoud <br> Im Graphic  <br> Designer</h1>
-            <p>Waxaan ahay horumariye websit-yada iyo naqshadeeye jecel hal-abuurka.</p>
-            <button class="hire-btn">Hire Me Now</button>
-        </div>
-        <div class="hero-image">
-            <p>Sawirkaaga Halkan</p>
-        </div>
+  <div class="container">
+    
+    <div class="profile">
+      <img src="https://via.placeholder.com/150" alt="Profile Image">
+      <h1>Your Name</h1>
+      <p>Frontend Developer (HTML & CSS)</p>
     </div>
+
+    <div class="about">
+      <h2>About Me</h2>
+      <p>
+        I am learning web development. I can build simple websites using HTML and CSS.
+      </p>
+    </div>
+
+    <div class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Email: yourname@email.com</p>
+    </div>
+
+  </div>
+
 </body>
 </html>
+🎨 2. style.css
+CSS
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  background: #007bff;
+  color: white;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
